@@ -65,6 +65,18 @@ namespace Ircc
             return bComm.Concat(bCode).Concat(bSize).Concat(bRsvd).Concat(p.data).ToArray();
         }
 
+        public static Header bytesToHeader(byte[] b)
+        {
+            Header h = new Header();
+
+            h.comm = ToInt16(b, FieldIndex.COMM);
+            h.code = ToInt16(b, FieldIndex.CODE);
+            h.size = ToInt32(b, FieldIndex.SIZE);
+            h.reserved = ToInt32(b, FieldIndex.RSVD);
+
+            return h;
+        }
+
         public static Packet bytesToPacket(byte[] b)
         {
             Packet p = new Packet();
