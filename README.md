@@ -31,6 +31,7 @@ struct Packet
 1 : server to server  
 
 ##Code  
+Note: Rest of code IRCCHelper.cs  
 000 : Fail  
 100 : Success  
 200 : Message  
@@ -47,3 +48,9 @@ struct Packet
 800 : Heartbeat  
 900 : Destroy  
 -950 : Server Destroy  
+
+
+Jinhyuk: <https://github.com/JinHyuk-Lee/433client>  
+Taehoon: <https://github.com/taekong423/433server>  
+Hokwen: Ircc - <https://github.com/hokjoung/Ircc>, IrccServer - <https://github.com/hokjoung/IrccServer>
+
